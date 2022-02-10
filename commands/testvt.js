@@ -1,6 +1,6 @@
 const nvt = require('node-virustotal');
 const defaultTimedInstance = nvt.makeAPI();
-const theSameKey = defaultTimedInstance.setKey('1c3eb4b88baa27490256d95ac1e571a92fc14ba4a1dfec29789af91b5bf3f11e');
+const theSameKey = defaultTimedInstance.setKey('##################################');
 
 module.exports = {
   category: 'Testing',
