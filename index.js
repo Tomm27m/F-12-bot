@@ -143,7 +143,7 @@ client.on("message", async message => {
                   }
                 });
 
-                defaultChannel.send(`Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.`);
+                defaultChannel.send(`Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.`);
               }
 
               const checkifvar = args1[x].split('/');
@@ -167,19 +167,19 @@ client.on("message", async message => {
                   .setDescription(`Sender: ${message.author.tag} | ${message.author.id}\nLink: ${checkifvar[x]}\nChannel sent: <#${message.channel.id}>\nFull message: \`${message.content}\``)
                       
                   if(!guildConfig){
-                    message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.', {
+                    message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.', {
                       embed: lsembed,
                     });
                   }
 
                   if(guildConfig){
                     if(guildConfig.logsChannel == 0){
-                      message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.', {
+                      message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.', {
                         embed: lsembed,
                       });
                     }
                     else{
-                      client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.');
+                      client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.');
                       client.channels.cache.get(guildConfig.logsChannel).send(lsembed);
                     }
                   }
@@ -237,7 +237,7 @@ client.on("message", async message => {
                     .setTimestamp();
 
                     if(!guildConfig){
-                      message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                      message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                       {
                         embed: bledembed,
                       });
@@ -246,28 +246,28 @@ client.on("message", async message => {
 
                     if(guildConfig){
                       if(guildConfig.staffrole == 0 && guildConfig.logsChannel == 0){
-                        message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                        message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                         {
                           embed: bledembed,
                         });
                         message.delete();
                       }
                       if(guildConfig.staffrole == 0 && guildConfig.logsChannel > 0){
-                        client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                        client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                         {
                           embed: bledembed,
                         });
                         message.delete();
                       }
                       if(guildConfig.logsChannel == 0 && guildConfig.staffrole > 0){
-                        message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                        message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                         {
                           embed: bledembed,
                         })
                         message.delete();
                       }
                       if(guildConfig.logsChannel > 0 && guildConfig.staffrole > 0){
-                        client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.');
+                        client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.');
                         client.channels.cache.get(guildConfig.logsChannel).send(`<@&${guildConfig.staffrole}>`,
                         {
                           embed: bledembed,
@@ -345,7 +345,7 @@ client.on("message", async message => {
                         .setTimestamp();
 
                         if(!guildConfig){
-                          message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                          message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                           {
                             embed: bledembed,
                           });
@@ -354,28 +354,28 @@ client.on("message", async message => {
 
                         if(guildConfig){
                           if(guildConfig.staffrole == 0 && guildConfig.logsChannel == 0){
-                            message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                            message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                             {
                               embed: bledembed,
                             });
                             message.delete();
                           }
                           if(guildConfig.staffrole == 0 && guildConfig.logsChannel > 0){
-                            client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                            client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                             {
                               embed: bledembed,
                             });
                             message.delete();
                           }
                           if(guildConfig.logsChannel == 0 && guildConfig.staffrole > 0){
-                            message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                            message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                             {
                               embed: bledembed,
                             })
                             message.delete();
                           }
                           if(guildConfig.logsChannel > 0 && guildConfig.staffrole > 0){
-                            client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.');
+                            client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.');
                             client.channels.cache.get(guildConfig.logsChannel).send(`<@&${guildConfig.staffrole}>`,
                             {
                               embed: bledembed,
@@ -431,7 +431,7 @@ client.on("message", async message => {
                 const guildID = message.guild.id;
                 const guildConfig = await PerServerSettings.findOne({ guildID });
 
-                client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.');
+                client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.');
                 client.guilds.cache.get('900294783107481600').channels.cache.get('925260037474119770').send(`VT scan prevented in \`${message.guild.name} | ${message.guild.id}\` due to a possible rate limit.\n${vtpm}`);
                 return;
               }
@@ -497,7 +497,7 @@ client.on("message", async message => {
                       .setTimestamp();
                       
                       if(!guildConfig){
-                        message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                        message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                         {
                           embed: vtscanembed,
                         });
@@ -505,13 +505,13 @@ client.on("message", async message => {
 
                       if(guildConfig){
                         if(guildConfig.logsChannel == 0){
-                          message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.',
+                          message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.',
                           {
                             embed: vtscanembed,
                           });
                         }
                         else{
-                          client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.');
+                          client.channels.cache.get(guildConfig.logsChannel).send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.');
                           client.channels.cache.get(guildConfig.logsChannel).send(vtscanembed);
                         }
                       }
@@ -849,7 +849,7 @@ client.on("message", async message => {
     }
 
     if(command == "config"){
-      message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.');
+      message.channel.send('Bot discontinued. Read the docs below for more info.\nhttps://#######.gitbook.io/f-12/f-12/bot-discontinued.');
       return;
     }
 });
@@ -893,7 +893,7 @@ client.on('guildCreate', async guild => {
     }
   });
 
-  defaultChannel.send('Bot discontinued. Read the docs below for more info.\nhttps://tomm27m.gitbook.io/f-12/f-12/bot-discontinued.');
+  defaultChannel.send('Bot discontinued. Read the docs below for more info.\nhttps://#####.gitbook.io/f-12/f-12/bot-discontinued.');
   return;
 });
 
