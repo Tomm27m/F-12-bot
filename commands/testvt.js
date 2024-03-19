@@ -13,7 +13,7 @@ module.exports = {
 
   callback: ({ interaction, args }) => {
 
-    if(args[0] == 'tomisnoob'){
+    if(args[0] == 'nyxisnoob'){
       return;
     }
 
